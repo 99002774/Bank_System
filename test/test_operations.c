@@ -42,23 +42,23 @@ int main() {
 /* Write all the test functions */ 
 
 int test_view(void) {
-  CU_ASSERT(3000 == viewaccount(1000));
+  CU_ASSERT(3000 == view(1000));
   
   /* Dummy fail*/
-  CU_ASSERT(10000 == viewaccount(7500));
+  CU_ASSERT(10000 == view(7500));
 }
 
 
 int test_addmoney(void) {
-  CU_ASSERT(3000 == addmoney(1000));
+  CU_ASSERT(3000 == addmoney(2000,1000));
   
   /* Dummy fail*/
-  CU_ASSERT(10000 == addmoney(7500));
+  CU_ASSERT(10000 == addmoney(500,7500));
 }
 
 int test_withdraw(void) {
-  CU_ASSERT( 2000== withdraw(2000));
+  CU_ASSERT( 2000== withdraw(2000,4000));
   
   /* Dummy fail*/
-  CU_ASSERT(1000 == withdraw(4000));
+  CU_ASSERT(1000 == withdraw(4000,6000));
 }
