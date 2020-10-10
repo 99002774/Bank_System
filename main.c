@@ -2,7 +2,7 @@
 
 int main()
 {
- int deposit, withdraw, res, balanace=0;                                                                                                                
+ int deposit, wd, res, balance=0;                                                                                                                
  char op;                                                                      
                                                                          
  while(1)                                                                      
@@ -25,8 +25,8 @@ int main()
      break;                                                                    
    case 'W':                                                                    
      printf("\nEnter withdraw amount: ");                                      
-     scanf("%d", &withdraw);                                                    
-      res=withdraw(withdraw,balance);   
+     scanf("%d", &wd);                                                    
+      res=withdraw(wd,balance);   
 	printf("%d",res);	                                                  
      break;                                                                    
    case 'B':                                                                    
