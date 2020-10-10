@@ -2,7 +2,7 @@
 #include <CUnit/CUnit.h>
 
 /* Modify these two lines according to the project */
-#include <header.h>
+#include <function.h>
 #define PROJECT_NAME    "Function"
 
 /* Prototypes for all the test functions */
