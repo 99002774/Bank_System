@@ -1,4 +1,4 @@
-#include<header.h>
+#include<function.h>
 
 int addmoney(int n,int bal)
 {
